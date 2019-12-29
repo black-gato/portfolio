@@ -6,7 +6,7 @@ RUN hugo -v --source=/src --destination=/src/public
 # Install NGINX and deactivate NGINX's default index.html file.
 # Move the static site files to NGINX's html directory.
 # This directory is where the static site files will be served from by NGINX.
-FROM nginx:stable-alpine
+FROM nginx:latest
 RUN mv /usr/share/nginx/html/index.html /usr/share/nginx/html/old-index.html
 COPY --from=HugoBuild /src/public/ /usr/share/nginx/html/
 
