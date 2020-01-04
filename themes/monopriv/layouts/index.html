@@ -5,14 +5,17 @@
 	<div class="text-center">
 		{{range first 10 .Site.RegularPages }}
 		{{if eq .Section "post"}}
-		<div class="text-justified mt-3">
-			<h5><a href="{{.Permalink}}">{{.Params.Skill}}</a></h5>
-			<img src="{{.Params.Image}}" height="50" width="50">
-			<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1">
-				<div class="w3-container w3-padding-small w3-red w3-center" style="width: 25%">
-					{{.Params.Perc}}</div>
+		<div class="text-justified mt-3" style="max-width: 500px; margin: 0 auto;">
+
+			<div>
+				<img class="skill-image" src="{{.Params.Image}}" style="float: left;" height="50" width="50">
+				<div class="w3-light-grey" style="color: #000; background-color: #f1f1f1; margin: 0 80px;">
+					<div class="w3-container w3-padding-small w3-red w3-center" style="width: 25%">
+						{{.Params.Perc}}</div>
+				</div>
 			</div>
-			<h5></h5>
+			<div style="clear: both;"></div>
+
 
 		</div>
 		{{end}}

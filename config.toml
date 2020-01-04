@@ -1,4 +1,4 @@
-title = "Monopriv"
+title = "Anthony Mirville"
 languagecode = "en"
 author = "Steve Francia"
 copyright = "Copyright © 2008–2019"
@@ -12,11 +12,9 @@ disqusShortname = "yourdiscussshortname"
 theme = "monopriv"
 
 [params]
-about = "A privacy focused minimal bootstrap theme"
-skill = "tst"
+about = "Developer, SR Engineer, and Jui Jitus enthusiast"
 img = "img/logo.png"
-github = "https://github.com"
-gitlab = "https://gitlab.com"
+github = "https://github.com/black-gato"
 email = "mail@example.com"
 # site meta description
 metadesc = "A simple privacy oriented bootstrap hugo blog"
